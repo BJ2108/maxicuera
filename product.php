@@ -48,16 +48,26 @@ $products = $conn->query($products_sql);
             <div class="div-form">
                 <form method="post" action="">
                     <input type="hidden" name="id" id="id">
-                    <label for="nombre_producto">Nombre del Producto</label>
-                    <input class="input-form" type="text" name="nombre_producto" id="nombre_producto" required><br><br>
-                    <label for="marca">Marca</label>
-                    <input class="input-form" type="text" name="marca" id="marca" required><br><br>
-                    <label for="cantidad">Cantidad</label>
-                    <input class="input-form" type="number" name="cantidad" id="cantidad" required><br><br>
-                    <label for="fecha_vencimiento">Fecha de Vencimiento</label>
-                    <input class="input-form" type="date" name="fecha_vencimiento" id="fecha_vencimiento" required><br><br>
-                    <label for="ubicacion">Ubicación</label>
-                    <input class="input-form" type="text" name="ubicacion" id="ubicacion" required><br><br>
+                    <div class="div-label-input">
+                        <label for="nombre_producto">Nombre del Producto</label>
+                        <input class="input-form" type="text" name="nombre_producto" id="nombre_producto" required>
+                    </div>
+                    <div class="div-label-input">
+                        <label for="marca">Marca</label>
+                        <input class="input-form" type="text" name="marca" id="marca" required>
+                    </div>
+                    <div class="div-label-input">
+                        <label for="cantidad">Cantidad</label>
+                        <input class="input-form" type="number" name="cantidad" id="cantidad" required>
+                    </div>
+                    <div class="div-label-input">
+                        <label for="fecha_vencimiento">Fecha de Vencimiento</label>
+                        <input class="input-form" type="date" name="fecha_vencimiento" id="fecha_vencimiento" required>
+                    </div>
+                    <div class="div-label-input">
+                        <label for="ubicacion">Ubicación</label>
+                        <input class="input-form" type="text" name="ubicacion" id="ubicacion" required>
+                    </div>
                     <button class="guardado" type="submit" name="guardar">Guardar</button>
                 </form>
             </div>

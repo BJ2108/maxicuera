@@ -85,31 +85,48 @@ h2 {
 
 #div-productos, #div-usuario {
     display: flex;
-    text-align: center;
     justify-content: center;
+    text-align: center;
 }
 
-.div-form {
+.div-form form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: nowrap;
     background-color: #024065;
     border: solid 5px #00314C;
     border-radius: 5px;
-    padding: 10px 50px;
     color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+}
+
+.div-label-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 /* Contenedor de la fila del checkbox */
 .contenedor-mostrar-contraseña {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
 }
 /* Estilo del checkbox */
 .contenedor-mostrar-contraseña input[type="checkbox"] {
     margin-right: 8px;
 }
 
-label, input {
-    display: block;
+#select-rol {
+    width: 100px;
+}
+
+#observacion {
+    width: 400px;
 }
 
 input {
@@ -118,7 +135,6 @@ input {
 }
 
 .input-form {
-    height: auto;
     width: 200px;
 }
 

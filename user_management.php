@@ -47,21 +47,31 @@ $role = $_SESSION['role'];
             <div class="div-form">
                 <form method="post" action="">
                     <input type="hidden" name="id" id="id">
-                    <label for="username">Nombre de Usuario</label>
-                    <input type="text" name="username" id="username" required><br><br>
-                    <label for="nombre_apellido">Nombre y Apellido</label>
-                    <input type="text" name="nombre_apellido" id="nombre_apellido" required><br><br>
-                    <label for="password">Contraseña</label>
-                    <input type="password" name="password" id="password" required><br><br>
-                    <div class="contenedor-mostrar-contraseña">
-                        <input type="checkbox" id="mostrar-contraseña">
-                        <label class="ver-contra" for="mostrar-contraseña">Mostrar Contraseña</label>
+                    <div class="div-label-input">
+                        <label for="username">Nombre de Usuario</label>
+                        <input type="text" name="username" id="username" required>
                     </div>
-                    <label for="role">Rol</label>
-                    <select name="role" id="role" required>
-                        <option value="admin">Admin</option>
-                        <option value="user">User</option>
-                    </select><br><br>
+                    <div class="div-label-input">
+                        <label for="nombre_apellido">Nombre y Apellido</label>
+                        <input type="text" name="nombre_apellido" id="nombre_apellido" required>
+                    </div>
+                    <div class="div-label-input">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="div-label-input">
+                        <div class="contenedor-mostrar-contraseña">
+                            <input type="checkbox" id="mostrar-contraseña">
+                            <label class="ver-contra" for="mostrar-contraseña">Mostrar Contraseña</label>
+                        </div>
+                    </div>
+                    <div class="div-label-input">
+                        <label for="role">Rol</label>
+                        <select id="select-rol" name="role" id="role" required>
+                            <option value="admin">Admin</option>
+                            <option value="user">User</option>
+                        </select>
+                    </div>
                     <button class="guardado" type="submit" name="guardar">Guardar</button>
                 </form>
             </div>

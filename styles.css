@@ -174,24 +174,6 @@ hr {
     width: 800px;
 }
 
-/* Diseño de la linea 1 de los contenedores (en pc se ven dos bloques en 1 linea en celular se ve solo 1 bloque por linea) */
-
-.linea1 {
-    display: flex;
-    width: calc(50% - 20px);
-    margin: 20px auto;
-}
-
-/* Diseño de la linea 2 de los contenedores */
-
-.linea2 {
-    display: flex;
-    margin: 20px auto;
-    align-items: center;
-    text-align: center;
-    width: calc(50% - 20px);
-}
-
 /* Diseño del texto que va dentro de todos los contenedores */
 
 .txt-bloque {
